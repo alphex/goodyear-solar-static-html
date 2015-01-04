@@ -1,0 +1,25 @@
+html, body {
+	height: 100%;         /* required */
+}
+body {
+	text-align: center;   /* horizontal centering hack for IE */
+	padding: 0;           /* required to "hide" distance div */
+	margin: 0;            /* required to "hide" distance div */
+}
+div#out { 
+	margin-bottom: -10em; /* half of content height */
+	background: red;      /* temporary - used to see div */
+	width: 1px;           /* required to "hide" distance div */
+	height: 50%;          /* required */
+	float: left;          /* required */
+
+}
+div#in {
+	position: relative;   /* positions content on top of distance */
+	text-align: left;     /* horizontal centering hack for IE */
+	height: 345px;         /* required - desired height */
+	width: 346px;          /* required - desired width */
+	background: #fff;     /* cosmetic */
+	margin: 0 auto;       /* required */
+	clear: left;          /* required */
+}
